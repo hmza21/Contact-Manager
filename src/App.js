@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import Form from './components/form'
 import ContactsList from './components/contactsList'
 
@@ -12,11 +12,19 @@ const App = () => {
     setContacts([...contacts, contact]);
   };
 
+  const deleteContact = (index) => {
+    const updatedContacts = [...contacts];
+    updatedContacts.splice(index, 1);
+    setContacts(updatedContacts);
+  }
+
   return (
     <>
-      <h1>Contact Manager App</h1>
-      <Form addContact={ addContact }/>
-      <ContactsList contacts={ contacts }/>
+      <div id="main">
+        <h1>Contact Manager App</h1>
+        <Form addContact={ addContact }/>
+        <ContactsList contacts={ contacts } deleteContact={ deleteContact }/>
+      </div>
     </>
   );
 }

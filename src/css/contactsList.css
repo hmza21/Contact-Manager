@@ -1,0 +1,18 @@
+#contacts-list {
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 rgb(200, 200, 200);
+    /* background-color: rgb(225, 245, 255); */
+}
+
+h2 {
+    margin: 5px;
+}
+
+ol {
+    margin: 0;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+}
