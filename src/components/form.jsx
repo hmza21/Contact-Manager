@@ -22,12 +22,12 @@ const Form = props => {
   return (
     <form onSubmit={ addContactSubmit }>
       <label htmlFor="name">Name: </label>
-      <input type="text" value={ username } onChange={e => e.target.value} />
+      <input type="text" value={ username } onChange={e => setUsername(e.target.value)} />
 
       <br />
       
       <label htmlFor="email">Email: </label>
-      <input type="text" value={ email } onChange={e => e.target.value} />
+      <input type="text" value={ email } onChange={e => setEmail(e.target.value)} />
       
       <br />
       
